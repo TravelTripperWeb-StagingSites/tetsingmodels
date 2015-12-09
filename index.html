@@ -1,0 +1,35 @@
+---
+layout: default
+title_localized:
+  en: EN Page Title
+  ru: RU Page Title
+permalink_localized:
+  en: /
+  ru: home
+---
+<h1>{% t hello %}</h1>
+Index page content
+<p>{% t signature %}</p>
+
+{% region region1 %}
+
+{% include reg_sample.html %}
+
+<p>Available languages:</p>
+<ul>
+  {% for lang in site.languages %}
+  <li>{{ lang | upcase }}</li>
+  {% endfor %}
+</ul>
+
+<br>
+<p>Books
+  {% for book in site.data.books %}
+    <p> <a href="{{ book[0] | permalink: model_dir: 'book' }}"> {{book[1].title}}</a>  </p>
+  {% endfor %}
+</p>
+
+<p>
+  Dynamic page: hard-coded link: {{ '/dir1/dynamic' | permalink }} <br/>
+  {%comment%} Static page: hard-coded link: {{ '/dir1/static' | permalink }}{%endcomment%} <br/>
+</p>

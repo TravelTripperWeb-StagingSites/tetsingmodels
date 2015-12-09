@@ -1,0 +1,8 @@
+<span> Select language:
+    <select id="language" onchange="location = this.options[this.selectedIndex].value;">
+        {% for lang in site.languages %}
+        <option   {% if lang == site.active_lang %} selected="true" {% endif%} value="{{ page | permalink: locale: lang }}">{{ lang | upcase }}</option>
+
+        {% endfor %}
+    </select>
+</span>

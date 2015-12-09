@@ -1,0 +1,10 @@
+[
+  {
+    "_template": "html",
+    "content": "<p>1st item</p>"
+  },
+  {
+    "_template": "html",
+    "content": "<p>2nd item</p>"
+  }
+]

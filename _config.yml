@@ -1,0 +1,6 @@
+default_lang: 'en'
+languages: ['en', 'ru']
+page_gen:
+  - data: 'books'
+    template: 'book'
+    dir: 'book'
