@@ -36,7 +36,11 @@ module Jekyll
         end
       end
 
-      raise "permalink for '#{token}' not found" if page.nil?
+      if page.nil? && !token.end_with?('/') && File.exists?(File.join(site.config['source'], "#{token}.html"))
+        raise "Do not use permalink filter for static files (#{token})"
+      elsif page.nil?
+        raise "permalink for '#{token}' not found"
+      end
 
       page
     end
