@@ -13,7 +13,7 @@ module Jekyll
       u = URL.new({
         template: template,
         placeholders: url_placeholders,
-        permalink: (data['permalink_localized'] && data['permalink_localized'][locale]) || data['permalink']
+        permalink: (data['permalink_localized'] && data['permalink_localized'][locale])
       }).to_s
       u = '/' + locale + u unless locale == site.default_lang
 
@@ -44,6 +44,5 @@ module Jekyll
     end
   end
 end
-
 
 Liquid::Template.register_filter(Jekyll::LocalizedPageUrlFilter)
