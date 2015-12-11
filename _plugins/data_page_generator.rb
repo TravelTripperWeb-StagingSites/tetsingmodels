@@ -40,7 +40,7 @@ module Jekyll
           dir = data_spec['dir'] || data_spec['data']
 
           if site.layouts.key? template
-            records = site.data[data_spec['data']]
+            records = site.data['_models'][data_spec['data']]
             records.each do |record|
               page = DataPage.new(site, site.source, dir, record[1], record[0], template, data_spec['data'])
               site.pages << page

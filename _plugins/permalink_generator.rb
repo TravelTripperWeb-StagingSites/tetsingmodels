@@ -8,7 +8,7 @@ module Jekyll
         key = 'url' + (locale.nil? ? '' : "_#{locale}" )
         path_or_page[key]
       else
-        site = Jekyll.sites.first
+        site = Jekyll.sites.last # each regeneration adds new site (if using watch or serve)
         page = detect_page(site, path_or_page, model_dir)
         page.url(locale || site.active_lang)
       end
