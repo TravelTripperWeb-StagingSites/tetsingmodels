@@ -1,0 +1,9 @@
+---
+layout: default
+permalink: book/
+---
+<p>Books
+  {% for book in site.data._models.books %}
+    <p> <a href="{{ book[0] | permalink: model_dir: 'book' }}"> {{book[1].title}}</a>  </p>
+  {% endfor %}
+</p>

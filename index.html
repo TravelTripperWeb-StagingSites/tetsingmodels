@@ -23,8 +23,8 @@ Index page content
 </ul>
 
 <br>
-<p>Books
-  {% for book in site.data.books %}
+<p>Books (<a href="{{ '/books.html' | permalink }}">or separated list</a>)
+  {% for book in site.data._models.books %}
     <p> <a href="{{ book[0] | permalink: model_dir: 'book' }}"> {{book[1].title}}</a>  </p>
   {% endfor %}
 </p>
