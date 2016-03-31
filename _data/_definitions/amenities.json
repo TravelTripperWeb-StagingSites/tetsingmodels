@@ -1,0 +1,9 @@
+{
+  "name": {},
+  "image": {
+    "type": "image"
+  },
+  "description": {
+   "type": "rich_text" 
+  }
+}

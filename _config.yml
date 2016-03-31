@@ -1,6 +1,13 @@
 default_lang: 'en'
-languages: ['en', 'ru']
+languages: ['en']
+
+# default_lang: 'en'
+# languages: ['en', 'ru']
 page_gen:
-  - data: 'books'
-    template: 'book'
-    dir: 'book'
+  - data: 'amenities'
+    template: 'amenity'
+    dir: 'amenities'
+
+exclude:
+  - 'sitemap.json'
+  - 'assets'

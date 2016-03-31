@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'variables';
+
+html {
+  width: 100%;
+}
+
+body {
+  padding-top: $nav-height;
+  width: 100%;
+  font-family: Arial, sans;
+}
+
+@import 'nav';
+@import 'general';
+
+@import 'home';
