@@ -5,6 +5,6 @@
     "type": "image"
   },
   "description": {
-   "type": "text" 
+   "type": "richtext" 
   }
 }
