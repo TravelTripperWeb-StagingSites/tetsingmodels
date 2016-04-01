@@ -1,1 +1,1 @@
-require 'jekyll-utf8'
+#require 'jekyll-utf8'
