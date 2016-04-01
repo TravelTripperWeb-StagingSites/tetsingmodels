@@ -1,1 +1,4 @@
-#require 'jekyll-utf8'
+begin
+  require 'jekyll-utf8'
+rescue
+end
