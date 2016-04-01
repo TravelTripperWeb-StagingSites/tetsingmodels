@@ -1,0 +1,19 @@
+.amenities {
+  section {
+    h3, p {
+      text-align: left;
+    }
+    
+    img {
+      float: left;
+      height: 150px;
+      margin-right: 10px;
+    }
+    &:after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+  }
+  
+}

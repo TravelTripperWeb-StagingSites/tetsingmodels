@@ -2,9 +2,22 @@
 nav {
   background: white;
   z-index: 10000;
-  height: $nav-height;
+  height: $nav-height + 22px;
   position: fixed;
   top: 0; left: 0; right: 0;
+  .languages {
+    width: 100%;
+    padding: 5px 10%;
+    font-size: 12px;
+    height: 20px;
+    line-height: 12px;
+    text-align: right;
+    a, a:visited, a:hover, a:active {
+      text-decoration: none;
+      color: $med-blue;
+      margin: 0 10px;
+    }
+  }
   .logo, .menu, .actions {
     float: left;
   }

@@ -7,23 +7,13 @@
         <script src="/assets/js/application.js" type="text/javascript"></script>
     </head>
     <body>
-      <span> Select language:
-          <select id="language" onchange="location = this.options[this.selectedIndex].value;">
-              {% for lang in site.languages %}
-              <option   {% if lang == site.active_lang %} selected="true" {% endif%} value="{{ page | permalink: locale: lang }}">{{ lang | upcase }}</option>
-
-              {% endfor %}
-          </select>
-      </span>
-      
-      
       <nav>
         <div class="languages">
           <a href="{{ page | permalink: locale: 'en' }}">{% t language_name, en %}</a>
           <a href="{{ page | permalink: locale: 'es' }}">{% t language_name, es %}</a>
         </div>
         <div class="logo">
-          <a href="{{ '/' | permalink: locale: 'es' }}"><img src="/assets/images/logo.png" /></a>
+          <a href="{{ '/' | permalink }}"><img src="/assets/images/logo.png" /></a>
         </div>
         <div class="menu">
           <a href="{{ '/rooms-and-suites' | permalink }}">{% t nav.rooms_suites %}</a>

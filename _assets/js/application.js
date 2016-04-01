@@ -12,7 +12,7 @@ $(function() {
             var rooms = results.rooms;
             for(var i=0; i<rooms.length; i++) {
                 var room = rooms[i];
-                var roomDiv = document.createElement("div");
+                var roomDiv = document.createElement("section");
                 $(roomDiv).addClass("room");
                 
                 var roomPhoto = document.createElement("img");

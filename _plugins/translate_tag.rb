@@ -13,10 +13,10 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       load_translations(site.source)
-      I18n.locale = @locale || site.active_lang || site.default_lang || 'en'
+      locale = @locale || site.active_lang || site.default_lang || 'en'
       I18n.available_locales = site.languages || [site.default_lang || 'en']
 
-      I18n.t @token
+      I18n.t @token, locale: locale
     end
 
     private
