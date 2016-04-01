@@ -4,13 +4,16 @@ module Jekyll
   class TranslateTag < Liquid::Tag
     def initialize(tag_name, token, *args)
       super
-      @token = token.strip
+      params = token.to_s.strip.split(',')
+      @token = params[0].strip
+      @locale = params[1].to_s.strip
+      @locale = nil if @locale == ''
     end
 
     def render(context)
       site = context.registers[:site]
       load_translations(site.source)
-      I18n.locale = site.active_lang || site.default_lang || 'en'
+      I18n.locale = @locale || site.active_lang || site.default_lang || 'en'
       I18n.available_locales = site.languages || [site.default_lang || 'en']
 
       I18n.t @token

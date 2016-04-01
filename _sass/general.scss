@@ -54,6 +54,6 @@ section {
     max-width: 500px;
   }
   background: #FFF;
-  &:nth-child(odd) {background: #CCC}
+  &:nth-child(odd) {background: $light-blue}
 
 }
