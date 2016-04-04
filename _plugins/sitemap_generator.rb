@@ -20,6 +20,7 @@ class SitemapGenerator
 
     sitemap['__CONFIG__', 'default_locale'] = default_lang
     sitemap['__CONFIG__', 'page_gen'] = site.config['page_gen']
+    sitemap['__CONFIG__', 'locales'] = site.config['languages']
 
     pages.each do |page|
       url = page.url
@@ -28,7 +29,7 @@ class SitemapGenerator
       url = '__ROOT__' + url
 
       path = url.split('/')
-      label = path.last
+      label = path.last == 'index.html' && path.length > 2 ? path[-2] : path.last
       path = path[0..-2] + ['__PAGES__']
 
       source_path = page.is_a?(Jekyll::DataPage) ? page.source_path : page.path
@@ -38,6 +39,14 @@ class SitemapGenerator
     end
 
     sitemap['__REGIONS__'] = site.data['regions']
+
+    if Dir.exists?('tmp/src')
+      Dir.chdir('tmp/src') {
+        sitemap['__SHA__'] = sha
+      }
+    else
+      sitemap['__SHA__'] = sha
+    end
 
     save sitemap
   end
@@ -53,5 +62,9 @@ class SitemapGenerator
       File.open('sitemap.json', 'w') do |f|
         f.write(sitemap.to_json)
       end
+    end
+
+    def sha
+      `git rev-parse HEAD`.chomp
     end
 end

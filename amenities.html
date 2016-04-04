@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: amenities/
+---
+<div class='amenities'>
+  <section>
+    <h3>Ammenitites</h3>
+    <p>Lorem Ipsum</p>
+  </section>
+
+  {% for amenity in site.data._models.amenities %}
+    <section data-live-edit-model='amenities' data-live-edit-model-instance='{{amenity.id}}.json'>
+      <h3>
+        <a href="{{amenity.id | permalink: model_dir: 'amenities' }}">
+          {{ amenity.name }}
+        </a>
+      </h3>
+      <img src="{{ amenity.image.url}}" />
+      {{ amenity.description}}
+    </section>
+  {% endfor %}
+</div>

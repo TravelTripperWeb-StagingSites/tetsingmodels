@@ -1,35 +1,25 @@
 ---
 layout: default
 title_localized:
-  en: EN Page Title
-  ru: RU Page Title
-permalink_localized:
-  en: /
-  ru: home/
+  en: Example hotel
+  es: Ejemplo de hotel
 ---
-<h1>{% t hello %}</h1>
-Index page content
-<p>{% t signature %}</p>
-
-{% region region1 %}
-
-{% include reg_sample.html %}
-
-<p>Available languages:</p>
-<ul>
-  {% for lang in site.languages %}
-  <li>{{ lang | upcase }}</li>
-  {% endfor %}
-</ul>
-
-<br>
-<p>Books (<a href="{{ '/books.html' | permalink }}">or separated list</a>)
-  {% for book in site.data._models.books %}
-    <p> <a href="{{ book[0] | permalink: model_dir: 'book' }}"> {{book[1].title}}</a>  </p>
-  {% endfor %}
-</p>
-
-<p>
-  Dynamic page: hard-coded link: {{ '/dir1/dynamic' | permalink }} <br/>
-  {%comment%} Static page: hard-coded link: {{ '/dir1/static' | permalink }}{%endcomment%} <br/>
-</p>
+<div id="home">
+  <div id="hero">
+    <img src='/assets/images/home-hero.jpg' />
+    <div class='hero-content'>
+      <h2>Promo Line</h2>
+      <p>Subheader Line Here</p>
+      <a href="" class='button'>Book Now</a>
+    </div>
+  </div>
+  <section>
+    {% region home_about %}
+  </section>
+  <section>
+    {% region home_rooms %}
+  </section>
+  <section>
+    {% region home_ammentities %}
+  </section>
+</div>

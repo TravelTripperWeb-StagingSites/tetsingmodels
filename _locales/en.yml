@@ -1,3 +1,7 @@
 en:
-  hello: 'EN hello label'
+  language_name: English
+  nav:
+    rooms_suites: Rooms &amp; Suites
+    ammenities: Ammenities
+    gallery: Gallery
  
