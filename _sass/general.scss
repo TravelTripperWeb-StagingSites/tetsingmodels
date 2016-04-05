@@ -12,14 +12,17 @@
     right: 0;
     bottom: 0;
     h2 {
+      background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.7), rgba(255,255,255,.6), rgba(255,255,255,.5), rgba(255,255,255,.2)); 
       font-size: 60px;
       text-align: center;
       padding-top: 100px;
-      color: white;
+      padding-bottom: 20px;
+      color: $med-blue;
+      border-bottom: 1px dotted black;
+      width: 100%;
     }
     p {
       color: white;
-      border-top: 1px dotted white;
       padding-top: 20px;
       margin: 20px 20%;
     }
