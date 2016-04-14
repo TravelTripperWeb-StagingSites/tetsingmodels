@@ -1,14 +1,27 @@
 ---
-layout: default
-permalink: amenities/
+title_localized:
+  en: Our Hotel Amenities
+label_localized:
+  en: Amenities
+layout_localized:
+  en: default
+  es: default
+permalink_localized:
+  en: amenities/
+  es: comodidades/
+meta_description_localized:
+  en: Our hotel has the best amenities
+meta_keywords_localized:
+  en: 
 ---
 <div class='amenities'>
   <section>
-    <h3>Ammenitites</h3>
+    <h3>Amenitites</h3>
     <p>Lorem Ipsum</p>
   </section>
 
-  {% for amenity in site.data._models.amenities %}
+  {% assign amenities = site.data._models.amenities | sort: 'name' | reverse %}
+  {% for amenity in amenities %}
     <section data-live-edit-model='amenities' data-live-edit-model-instance='{{amenity.id}}.json'>
       <h3>
         <a href="{{amenity.id | permalink: model_dir: 'amenities' }}">
