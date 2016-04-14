@@ -20,7 +20,8 @@ meta_keywords_localized:
     <p>Lorem Ipsum</p>
   </section>
 
-  {% for amenity in site.data._models.amenities %}
+  {% assign amenities = site.data._models.amenities | sort: 'name' | reverse %}
+  {% for amenity in amenities %}
     <section data-live-edit-model='amenities' data-live-edit-model-instance='{{amenity.id}}.json'>
       <h3>
         <a href="{{amenity.id | permalink: model_dir: 'amenities' }}">
