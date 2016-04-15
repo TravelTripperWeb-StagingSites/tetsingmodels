@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
-<p>
-    <h3>{{ page.name }}</h3>
-    <img src="{{ page.image.url}}" />
-    {{ page.description }}
-</p>
+<div data-live-edit-model='amenities' data-live-edit-model-instance='{{page.id}}.json'>
+  <p>
+      <h3>{{ page.name }}</h3>
+      <img src="{{ page.image.url}}" />
+      {{ page.description }}
+  </p>
+</div>
