@@ -12,7 +12,8 @@
     "options": ["Type One", "Type Two"]
   },
   "image": {
-    "type": "image"
+    "type": "image",
+    "default_text": "Selct One"
   },
   "description": {
    "type": "richtext",
