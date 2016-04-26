@@ -9,7 +9,7 @@
     "type": "enum",
     "multiple": false,
     "default_text": "Selct One",
-    "options": ["Type One", "Type Two"]
+    "options": [["Type One", "Type One"], ["Type Two", "type-two"]]
   },
   "image": {
     "type": "image",
