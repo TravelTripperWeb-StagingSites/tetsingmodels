@@ -1,10 +1,21 @@
 {
-  "name": {},
-  "permalink": {},
+  "name": {
+    "hint": "Give the amenity a name."
+  },
+  "permalink": {
+    "placeholder": "Specify a URL."
+  },
+  "amenity_type": {
+    "type": "select",
+    "multiple": false,
+    "default_text": "Selct One",
+    "options": ["Type One", "Type Two"]
+  },
   "image": {
     "type": "image"
   },
   "description": {
-   "type": "richtext" 
+   "type": "richtext",
+   "instructions": "This content will appear on the both the summary and detail page."
   }
 }
