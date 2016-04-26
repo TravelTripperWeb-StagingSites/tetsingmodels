@@ -6,7 +6,7 @@
     "placeholder": "Specify a URL."
   },
   "amenity_type": {
-    "type": "select",
+    "type": "enum",
     "multiple": false,
     "default_text": "Selct One",
     "options": ["Type One", "Type Two"]
