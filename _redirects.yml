@@ -1,0 +1,6 @@
+---
+- test2/: amenities
+- test2: amenities
+- test1/: amenities
+- test: amenities
+- amenities: amenities/
