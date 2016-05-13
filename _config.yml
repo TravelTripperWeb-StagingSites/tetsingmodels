@@ -12,5 +12,3 @@ exclude:
   - 'sitemap.json'
   - 'assets'
   
-assets:
-  autowrite: false
