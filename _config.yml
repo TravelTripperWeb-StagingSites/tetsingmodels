@@ -11,3 +11,6 @@ page_gen:
 exclude:
   - 'sitemap.json'
   - 'assets'
+  
+assets:
+  autowrite: false
