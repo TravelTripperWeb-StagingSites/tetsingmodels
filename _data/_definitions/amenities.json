@@ -1,10 +1,11 @@
 {
-  "name": {},
+  "name": { "required": true },
   "permalink": {},
   "image": {
     "type": "image"
   },
   "description": {
-   "type": "richtext" 
+   "type": "richtext",
+   "required": true
   }
 }
