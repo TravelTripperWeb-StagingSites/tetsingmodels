@@ -1,6 +1,1 @@
-[
-  {
-    "_template": "html",
-    "content": "<h3>Rooms &amp; Suites</h3><p>Lorem Ipsum</p>"
-  }
-]
+[{"_template":"html","content":"<h3>Rooms &amp; Suites</h3>\n<p>Lorem Ipsum Lorem Ipsum- non conflicting.</p>","rendered_height":500}]
