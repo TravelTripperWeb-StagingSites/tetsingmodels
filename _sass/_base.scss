@@ -1,0 +1,45 @@
+// Base Elements
+// ==========================================================================
+
+body {
+  color: $text-color;
+  font-family: $global-font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+}
+
+h1 {
+  font-size: $type-size-3;
+}
+
+h2 {
+  font-size: $type-size-4;
+}
+
+h3 {
+  font-size: $type-size-5;
+}
+
+h4 {
+  font-size: $type-size-6;
+}
+
+h5 {
+  font-size: $type-size-6;
+}
+
+h6 {
+  font-size: $type-size-6;
+}
+
+small, .small {
+  font-size: $type-size-6;
+}
+
+u,
+ins {
+  border-bottom: 1px solid $text-color;
+}
+
