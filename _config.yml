@@ -2,8 +2,7 @@
 # title: "Bedrock"
 # title_separator: "|"
 # name: "Hotel Property Name"
-# description: "Site default description."
-# url: # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
+url: # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 # repository:  # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
@@ -108,13 +107,13 @@ plugins_dir:
   - _plugins-core
   - _plugins
 layouts_dir:
-  - _ttio_templates/bedrock/layouts
+  - _ttio_templates/bedrock/_layouts
   - _layouts
 data_dir: 
-  - _ttio_templates/bedrock/data
+  - _ttio_templates/bedrock/_data
   - _data
 includes_dir:
   - _includes
-  - _ttio_templates/bedrock/includes
+  - _ttio_templates/bedrock/_includes
   
 
