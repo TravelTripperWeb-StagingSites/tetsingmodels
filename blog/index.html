@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog Posts
+meta_description:
+meta_tags:
+  robots:
+---
+
+<ul>
+{% for category in site.data._models.post_categories %}
+  <li><a href="{{ category.id | permalink: model_dir: 'blog/categories'}}">{{category.name}}</a></li>
+{% endfor %}
+</ul>
+  
+    {% assign posts = data_paginator.posts %}
+    {% include components/post-list %}
+
