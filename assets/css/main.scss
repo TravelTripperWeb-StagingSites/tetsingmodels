@@ -2,7 +2,18 @@
 ---
 
 @import "../_ttio_templates/bedrock/_sass/variables";
+// Add any parts of bootstrap needed for template development (mixins, variables ect)
+
+{% comment %}
+TODO: Set up a general color library to override base things in "varaibles.css"
+{% endcomment %}
+
+{% if site.data.colors.link-color %}
+  $info-color: {{site.data.colors.link-color }};
+{% endif %}
 @import "variables"; //Overide any variables here
+
+
 @import "mixins";
 @import "base";
 @import "header";

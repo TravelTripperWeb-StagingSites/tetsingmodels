@@ -43,3 +43,16 @@ ins {
   border-bottom: 1px solid $text-color;
 }
 
+// Links
+
+a {
+  color: $link-color;
+  &:visited {
+    color: $link-color-visited;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+    color: $link-color-hover;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name_localized": {
+    "en": "AAA Rate"
+  },
+  "url_friendly_name_localized": {
+    "en": "aaa-special"
+  },    
+  "short_description_localized": {
+    "en": "Enjoy our standard room which includes comfortable pillow top mattresses, iron and ironing board, hair dryer and coffee maker."
+  },
+  "description_localized": {
+    "en": "<p>AAA Members <strong>ONLY</strong> receive up to 20% + 3 Free Rewards and Free Cancellation. A valid AAA Membership Card must be presented upon check-in to qualify for a discount.</p>"
+  },
+  "image": {
+  },
+  "reztrip_offer_id": "AAA",
+  "order": 1  
+}

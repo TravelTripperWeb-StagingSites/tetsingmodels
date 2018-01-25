@@ -1,0 +1,36 @@
+{
+  "name_localized": {
+    "en": "Standard Double"
+  },
+  "url_friendly_name_localized": {
+    "en": "standard-double"
+  },  
+  "short_description_localized": {
+    "en": "Enjoy our standard room which includes comfortable pillow top mattresses, iron and ironing board, hair dryer and coffee maker."
+  },
+  "description_localized": {
+    "en": "<p>Enjoy our standard room which includes comfortable pillow top mattresses, iron and ironing board, hair dryer and coffee maker.</p><strong>All Rooms Include</strong><ul><li>Wireless Internet Access (surcharge)</li><li>Cable/pay per view movies</li><li>pillow top mattress</li>"
+  },
+  "featured_image": {
+  },
+  "images": [
+  {
+      "url": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/working-in-bed.jpg",
+      "url_large":"//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/large_working-in-bed.jpg",
+      "url_medium": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/medium_working-in-bed.jpg",
+      "url_small": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/small_working-in-bed.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/xsmall_working-in-bed.jpg",
+      "url_thumb": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/thumb_working-in-bed.jpg"
+    },
+  {
+      "url": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/working-in-bed.jpg",
+      "url_large":"//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/large_working-in-bed.jpg",
+      "url_medium": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/medium_working-in-bed.jpg",
+      "url_small": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/small_working-in-bed.jpg",
+      "url_xsmall": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/xsmall_working-in-bed.jpg",
+      "url_thumb": "//cdn.traveltripper.io/stock-image-library/images/2018-01-23-121209/thumb_working-in-bed.jpg"
+    }
+  ],
+  "reztrip_room_id": "S2Q",
+  "order": 1  
+}

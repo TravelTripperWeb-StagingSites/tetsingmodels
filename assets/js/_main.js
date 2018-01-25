@@ -1,3 +1,3 @@
 /*
-   jQuery plugin settings and other scripts
+   scripts to compile
    ========================================================================== */

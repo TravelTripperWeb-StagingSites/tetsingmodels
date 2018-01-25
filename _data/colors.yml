@@ -1,0 +1,5 @@
+link-color: "#0000aa"
+
+__EDITABLE_FIELDS:
+  link-color: 
+    type: string

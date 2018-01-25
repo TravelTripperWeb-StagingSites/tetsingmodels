@@ -41,9 +41,10 @@ exclude:
   - tmp
   - vendor  
   - '_assets' # This is handled via rsync
-  - 'assets' # This is handled via rsync
+  - '_ttio_templates'
+
 keep_files: ['assets', 'ttio_templates/bedrock/assets']
-rsync_copy: ['_assets', '_ttio_templates/bedrock/_assets']
+rsync_copy: ['_assets', '_ttio_templates/bedrock/assets']
 
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -74,15 +75,21 @@ sass:
 permalink: pretty
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# data_paginate:
-#   per_page: 5
-#   data: 'blog'
-#   path: 'blog/page:num'
-#   pagination_template: 'blog/index.html'
-#   sort_field: 'date'
-#   sort_reverse: true
+data_paginate:
+  per_page: 2
+  data: 'posts'
+  path: 'blog/page:num'
+  pagination_template: 'blog/index.html'
+  sort_field: 'date'
+  sort_reverse: true
 
 page_gen: #
+  - data: 'post_categories'
+    template: 'category-posts'
+    dir: 'blog/categories'
+  - data: 'posts'
+    template: 'post-single'
+    dir: 'blog'
   # - data: 'attractions'
   #   template: 'attraction-single'
   #   dir: 'attractions'
@@ -95,9 +102,9 @@ page_gen: #
   # - data: 'offers'
   #   template: 'offer-single'
   #   dir: 'offers'
-  # - data: 'rooms'
-  #   template: 'room-single'
-  #   dir: 'rooms'
+  - data: 'rooms'
+    template: 'room-single'
+    dir: 'rooms'
   # - data: 'specials'
   #   template: 'special-single'
   #   dir: 'specials'
