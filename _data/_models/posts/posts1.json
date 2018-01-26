@@ -17,7 +17,12 @@
     "en": "get-to-work"
   },
   "date": "2018-01-14",
-  "post_content": "",
+  "post_content_localized": {
+    "en": "<p>Our hotel lets you get work done!</p><p>It's great!</p>"
+  },
+  "post_excerpt_localized": {
+    "en": "Our hotel lets you get work done!"
+  },
   "category": "post_categories1",
-  "tags": ["tags1", "tags3"]
+  "tags": ["post_tags1", "post_tags3"]
 }
