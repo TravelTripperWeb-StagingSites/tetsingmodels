@@ -7,11 +7,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);    
-    //      background-image: url('/ttio_templates/express-multi/assets/images/prevArrowBlack.png');
-    //      background-repeat: no-repeat;
-    //      background-color: transparent;
       height: 20px;
-      // span, &:hover span { visibility: hidden; }
     }
     .owl-prev {
       left: 5%;
@@ -24,7 +20,6 @@
     .owl-next {
       right: 5%;
       transform: translateY(-50%)  translateX(50%);  
-      background-image: url('/ttio_templates/express-multi/assets/images/nextArrowBlack.png');
       @include media-breakpoint-down(md) {
         right: 0;
         transform: translateY(-50%)  translateX(-50%);  
