@@ -122,5 +122,7 @@ data_dir:
 includes_dir:
   - _includes
   - _ttio_templates/bedrock/_includes
+i18n_dir:
+  - _ttio_templates/bedrock/_locales
+  - _locales
   
-

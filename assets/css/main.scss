@@ -1,6 +1,10 @@
 ---
 ---
 
+@import "../_sass/bootstrap/scss/functions";
+@import "../_sass/bootstrap/scss/variables";
+@import "../_sass/bootstrap/scss/mixins";
+
 @import "../_ttio_templates/bedrock/_sass/variables";
 // Add any parts of bootstrap needed for template development (mixins, variables ect)
 
@@ -19,6 +23,7 @@ TODO: Set up a general color library to override base things in "varaibles.css"
 @import "header";
 @import "footer";
 @import "utilities";
+@import "carousel";
 @import "pages/shared";
 @import "pages/about";
 @import "pages/contact";
