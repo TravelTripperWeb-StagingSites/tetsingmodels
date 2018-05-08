@@ -32,7 +32,8 @@
     {
       "required": true,  
       "type": "image",
-      "label": "Upload Large Image"
+      "label": "Upload Large Image",
+      "multiple": true  
     },
     "sort_order": 
     { 
