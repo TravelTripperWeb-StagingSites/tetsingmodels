@@ -27,15 +27,8 @@
       "required": true,  
       "type": "url_slug",
       "label": "Url Slug"
-    },  
-    "offer_image":
-    {
-      "required": true,  
-      "type": "image",
-      "label": "Upload Image"   ,
-      "multiple": true  
-    },   
-     "large_image":
+    },    
+    "large_image":
     {
       "required": true,  
       "type": "image",
