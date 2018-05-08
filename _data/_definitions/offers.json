@@ -16,6 +16,12 @@
       "type": "richtext",
       "label": "Check Rate"
     },
+    "start_date":
+    {
+      "required": true,  
+      "type": "date",
+      "label": "Start Date"
+    },
     "offer_details_link":
     {
       "required": true,  
