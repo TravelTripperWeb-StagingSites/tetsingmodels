@@ -1,4 +1,7 @@
 {
+    "gallery": {
+       "type": "gallery"   
+    },
     "offer_title":
     {
       "required": true,  
