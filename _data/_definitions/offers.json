@@ -1,0 +1,46 @@
+{
+    "gallery": {
+       "type": "gallery"   
+    },
+    "offer_title":
+    {
+      "required": true,  
+      "label": "Room Title"
+    },
+    "offer_desc":
+    {
+      "required": true,  
+      "type": "richtext",
+      "label": "Description"
+    },
+    "check_rate":
+    {
+      "required": true,  
+      "type": "richtext",
+      "label": "Check Rate"
+    },
+    "start_date":
+    {
+      "required": true,  
+      "type": "date",
+      "label": "Start Date"
+    },
+    "offer_details_link":
+    {
+      "required": true,  
+      "type": "url_slug",
+      "label": "Url Slug"
+    },    
+    "large_image":
+    {
+      "required": true,  
+      "type": "image",
+      "label": "Upload Large Image",
+      "multiple": true  
+    },
+    "sort_order": 
+    { 
+      "type": "integer",
+      "required": true 
+    }
+}
